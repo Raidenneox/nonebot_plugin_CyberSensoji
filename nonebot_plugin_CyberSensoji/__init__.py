@@ -17,7 +17,7 @@ async def lq_():
 
 @command.got("pb")
 async def pq_(reply: str = ArgPlainText('pb')):
-    if reply == '确定' or 'yes' or '抽取' or '嗯':
+    if reply in ('确定', 'yes', '抽取', '嗯'):
         for i in range(3):
             a = random.randint(0,100)
             if a >= 5 :
